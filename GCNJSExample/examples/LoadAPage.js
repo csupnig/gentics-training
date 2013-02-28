@@ -13,7 +13,7 @@ GCN.page(1, function (page) {
 
 //load page 5 from the server without locking it 
 GCN.page(5, { update: false }, function (page) {
-var name = page.prop('name');
+	var name = page.prop('name');
     
     alert("Pagename: " + name);
     
@@ -21,3 +21,10 @@ var name = page.prop('name');
     
     alert("content: " + content);
 });
+
+
+
+//Async Programming
+var myPage = GCN.folder(1).creatPage(1,{language:'de'}).save();
+
+myPage.publiush();

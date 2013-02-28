@@ -1,5 +1,7 @@
 http://www.gentics.com/Content.Node/guides/gcn_js_api_overview.html
 
+http://www.gentics.com/Content.Node/guides/gcnjsapi/jsdoc/index.html
+
 - Login
 
 - Loading a Folder
