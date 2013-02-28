@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.gentics</groupId>
+	<artifactId>restapi-client</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<dependencies>
+		<dependency>
+			<groupId>com.gentics</groupId>
+			<artifactId>restapi-lib</artifactId>
+			<version>1.10.2</version>
+		</dependency>
+
+		<!-- Jersey Client -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>1.1.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-core</artifactId>
+			<version>1.1.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.ws.rs</groupId>
+			<artifactId>jsr311-api</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<!-- Dependencies for Jackson JSON Serializer. Not deployed on archiva 
+			(but checked) -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-jaxrs</artifactId>
+			<version>1.7.6</version>
+		</dependency>
+		<!-- This is necessary for integrating with Jersey/JAXB -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-xc</artifactId>
+			<version>1.7.6</version>
+		</dependency>
+	</dependencies>
+	<repositories>
+		<repository>
+			<id>internal</id>
+			<url>http://archiva-mirror.office:8080/archiva/repository/internal/</url>
+			<name>internal</name>
+		</repository>
+	</repositories>
+</project>

@@ -1,0 +1,23 @@
+http://code.google.com/p/gtxcontentconnector
+
+- CMS Publizierung
+
+- CMS Tagmap
+
+- Content Repository
+
+- Sample Package
+	* Default Servlets
+	* Indexer
+	* Search
+
+- Using a Request Processor
+	* Fetching Beans
+
+- Building a Request Processor
+	* Can be used to fetch content
+	* Can be used for indexing
+
+- Rendering content
+	* Velocity
+	* PLinks
