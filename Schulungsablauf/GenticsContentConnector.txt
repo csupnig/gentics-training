@@ -21,3 +21,7 @@ http://code.google.com/p/gtxcontentconnector
 - Rendering content
 	* Velocity
 	* PLinks
+	
+	
+- TASK 1: Implement a RequestProcessor
+- TASK 2: Print the name of all pages in the folder with the id 21
