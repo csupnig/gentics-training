@@ -1,6 +1,6 @@
 //http://www.gentics.com/Content.Node/guides/gcn_js_api_page.html
 
-GCN.page(1, function (page) {
+var page = GCN.page(1, function (page) {
     var name = page.prop('name');
     
     alert("Pagename: " + name);
@@ -27,4 +27,5 @@ GCN.page(5, { update: false }, function (page) {
 //Async Programming
 var myPage = GCN.folder(1).creatPage(1,{language:'de'}).save();
 
+//Publish breaks the chain
 myPage.publiush();
