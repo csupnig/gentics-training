@@ -19,13 +19,23 @@ import com.sun.jersey.api.client.filter.ClientFilter;
 
 public class RESTClientHelper {
 	
+	private static final String DEFAULTURL = "http://demo-cms.gentics.com/CNPortletapp/rest/";
+	
 	private WebResource webResource;
 	
 	private String sessionID;
 	
 	private Client client;
 	
-	public RESTClientHelper () {
+	public RESTClientHelper() {
+		this(null);
+	}
+	
+	public RESTClientHelper (final String resturl) {
+		String restBase = resturl;
+		if (restBase == null) {
+			restBase = DEFAULTURL;
+		}
 		ClientConfig clientConfig = new DefaultClientConfig();
 		clientConfig.getClasses().add(JacksonJsonProvider.class);
 		client = Client.create(clientConfig);
@@ -51,7 +61,7 @@ public class RESTClientHelper {
 			}
 		});
 		
-		this.webResource = client.resource("http://demo-cms.gentics.com/CNPortletapp/rest/");
+		this.webResource = client.resource(restBase);
 	}
 	
 	public void doLogin(String username, String password) {

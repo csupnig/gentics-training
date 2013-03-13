@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Contentrepository status="ok">
+	<Object contentid="10002.24" mother_id="1" mother_type="10002"
+		obj_id="24" obj_type="10002">
+		<attributes>
+			<name><![CDATA[[Media]]]></name>
+		</attributes>
+		<children>
+			<Object contentid="10006.1" mother_id="24" mother_type="10002"
+				obj_id="1" obj_type="10006">
+				<attributes>
+					<name><![CDATA[[Template Contentpage]]]></name>
+				</attributes>
+			</Object>
+			<Object contentid="10002.17" mother_id="24" mother_type="10002"
+				obj_id="17" obj_type="10002">
+				<attributes>
+					<name><![CDATA[[Files]]]></name>
+				</attributes>
+			</Object>
+			<Object contentid="10002.3" mother_id="24" mother_type="10002"
+				obj_id="3" obj_type="10002">
+				<attributes>
+					<name><![CDATA[[Images]]]></name>
+				</attributes>
+				<children>
+					<Object contentid="10002.43" mother_id="3" mother_type="10002"
+						obj_id="43" obj_type="10002">
+						<attributes>
+							<name><![CDATA[Braintribe]]></name>
+						</attributes>
+						<children>
+							<Object contentid="10002.51" mother_id="43" mother_type="10002"
+								obj_id="51" obj_type="10002">
+								<attributes>
+									<name><![CDATA[detail]]></name>
+								</attributes>
+							</Object>
+							<Object contentid="10002.52" mother_id="43" mother_type="10002"
+								obj_id="52" obj_type="10002">
+								<attributes>
+									<name><![CDATA[edit]]></name>
+								</attributes>
+							</Object>
+							<Object contentid="10002.53" mother_id="43" mother_type="10002"
+								obj_id="53" obj_type="10002">
+								<attributes>
+									<name><![CDATA[list]]></name>
+								</attributes>
+							</Object>
+							<Object contentid="10002.54" mother_id="43" mother_type="10002"
+								obj_id="54" obj_type="10002">
+								<attributes>
+									<name><![CDATA[search]]></name>
+								</attributes>
+							</Object>
+						</children>
+					</Object>
+					<Object contentid="10002.35" mother_id="3" mother_type="10002"
+						obj_id="35" obj_type="10002">
+						<attributes>
+							<name><![CDATA[Icons]]></name>
+						</attributes>
+					</Object>
+					<Object contentid="10002.20" mother_id="3" mother_type="10002"
+						obj_id="20" obj_type="10002">
+						<attributes>
+							<name><![CDATA[Test Gallery]]></name>
+						</attributes>
+					</Object>
+				</children>
+			</Object>
+			<Object contentid="10002.25" mother_id="24" mother_type="10002"
+				obj_id="25" obj_type="10002">
+				<attributes>
+					<name><![CDATA[[Movies]]]></name>
+				</attributes>
+			</Object>
+		</children>
+	</Object>
+	<Object contentid="10002.2" mother_id="1" mother_type="10002"
+		obj_id="2" obj_type="10002">
+		<attributes>
+			<name><![CDATA[[Templates]]]></name>
+		</attributes>
+		<children>
+			<Object contentid="10002.36" mother_id="2" mother_type="10002"
+				obj_id="36" obj_type="10002">
+				<attributes>
+					<name><![CDATA[[Testarea]]]></name>
+				</attributes>
+			</Object>
+			<Object contentid="10002.18" mother_id="2" mother_type="10002"
+				obj_id="18" obj_type="10002">
+				<attributes>
+					<name><![CDATA[CSS]]></name>
+				</attributes>
+				<children>
+					<Object contentid="10002.55" mother_id="18" mother_type="10002"
+						obj_id="55" obj_type="10002">
+						<attributes>
+							<name><![CDATA[Braintribe]]></name>
+						</attributes>
+					</Object>
+				</children>
+			</Object>
+			<Object contentid="10002.19" mother_id="2" mother_type="10002"
+				obj_id="19" obj_type="10002">
+				<attributes>
+					<name><![CDATA[JS]]></name>
+				</attributes>
+				<children>
+					<Object contentid="10002.41" mother_id="19" mother_type="10002"
+						obj_id="41" obj_type="10002">
+						<attributes>
+							<name><![CDATA[Braintribe]]></name>
+						</attributes>
+					</Object>
+				</children>
+			</Object>
+			<Object contentid="10002.37" mother_id="2" mother_type="10002"
+				obj_id="37" obj_type="10002">
+				<attributes>
+					<name><![CDATA[RSS]]></name>
+				</attributes>
+			</Object>
+		</children>
+	</Object>
+	<Object contentid="10002.7" mother_id="1" mother_type="10002"
+		obj_id="7" obj_type="10002">
+		<attributes>
+			<name><![CDATA[Corporate Blog]]></name>
+		</attributes>
+		<children>
+			<Object contentid="10002.23" mother_id="7" mother_type="10002"
+				obj_id="23" obj_type="10002">
+				<attributes>
+					<name><![CDATA[Blogposts]]></name>
+				</attributes>
+			</Object>
+		</children>
+	</Object>
+	<Object contentid="10002.5" mother_id="1" mother_type="10002"
+		obj_id="5" obj_type="10002">
+		<attributes>
+			<name><![CDATA[Departments]]></name>
+		</attributes>
+		<children>
+			<Object contentid="10002.10" mother_id="5" mother_type="10002"
+				obj_id="10" obj_type="10002">
+				<attributes>
+					<name><![CDATA[Finance]]></name>
+				</attributes>
+			</Object>
+			<Object contentid="10002.39" mother_id="5" mother_type="10002"
+				obj_id="39" obj_type="10002">
+				<attributes>
+					<name><![CDATA[HR]]></name>
+				</attributes>
+			</Object>
+			<Object contentid="10002.8" mother_id="5" mother_type="10002"
+				obj_id="8" obj_type="10002">
+				<attributes>
+					<name><![CDATA[Marketing]]></name>
+				</attributes>
+				<children>
+					<Object contentid="10002.12" mother_id="8" mother_type="10002"
+						obj_id="12" obj_type="10002">
+						<attributes>
+							<name><![CDATA[Department Info]]></name>
+						</attributes>
+					</Object>
+					<Object contentid="10002.15" mother_id="8" mother_type="10002"
+						obj_id="15" obj_type="10002">
+						<attributes>
+							<name><![CDATA[Wiki]]></name>
+						</attributes>
+					</Object>
+				</children>
+			</Object>
+		</children>
+	</Object>
+	<Object contentid="10002.4" mother_id="1" mother_type="10002"
+		obj_id="4" obj_type="10002">
+		<attributes>
+			<name><![CDATA[Home]]></name>
+		</attributes>
+		<children>
+			<Object contentid="10002.31" mother_id="4" mother_type="10002"
+				obj_id="31" obj_type="10002">
+				<attributes>
+					<name><![CDATA[Aloha Editor]]></name>
+				</attributes>
+			</Object>
+			<Object contentid="10002.30" mother_id="4" mother_type="10002"
+				obj_id="30" obj_type="10002">
+				<attributes>
+					<name><![CDATA[Gentics Content.Node 5]]></name>
+				</attributes>
+			</Object>
+		</children>
+	</Object>
+	<Object contentid="10002.21" mother_id="1" mother_type="10002"
+		obj_id="21" obj_type="10002">
+		<attributes>
+			<name><![CDATA[News]]></name>
+		</attributes>
+	</Object>
+	<Object contentid="10002.6" mother_id="1" mother_type="10002"
+		obj_id="6" obj_type="10002">
+		<attributes>
+			<name><![CDATA[Projects-Wiki]]></name>
+		</attributes>
+		<children>
+			<Object contentid="10002.40" mother_id="6" mother_type="10002"
+				obj_id="40" obj_type="10002">
+				<attributes>
+					<name><![CDATA[Braintribe Mashup Demo]]></name>
+				</attributes>
+			</Object>
+			<Object contentid="10002.38" mother_id="6" mother_type="10002"
+				obj_id="38" obj_type="10002">
+				<attributes>
+					<name><![CDATA[Development-Wiki]]></name>
+				</attributes>
+			</Object>
+			<Object contentid="10002.27" mother_id="6" mother_type="10002"
+				obj_id="27" obj_type="10002">
+				<attributes>
+					<name><![CDATA[Marketing-Wiki]]></name>
+				</attributes>
+			</Object>
+		</children>
+	</Object>
+</Contentrepository>
