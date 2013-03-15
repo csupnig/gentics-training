@@ -28,10 +28,10 @@ public class UsingRequestProcessor {
 		RequestProcessor rp = config.getNewRequestProcessorInstance(1);
 		
 		CRRequest request = new CRRequest();
-		request.setRequestFilter("object.obj_type == 10002");
+		request.setRequestFilter("object.obj_type == 10007");
 		
 	 	Collection<CRResolvableBean> beans =  rp.getObjects(request);
-	 	
+	
 	 	for (CRResolvableBean bean : beans) {
 			System.out.println(bean.getContentid() + " - " + bean.getString("name"));
 		}

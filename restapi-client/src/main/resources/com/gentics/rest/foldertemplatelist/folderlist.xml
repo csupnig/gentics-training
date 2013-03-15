@@ -6,12 +6,6 @@
 			<name><![CDATA[[Media]]]></name>
 		</attributes>
 		<children>
-			<Object contentid="10006.1" mother_id="24" mother_type="10002"
-				obj_id="1" obj_type="10006">
-				<attributes>
-					<name><![CDATA[[Template Contentpage]]]></name>
-				</attributes>
-			</Object>
 			<Object contentid="10002.17" mother_id="24" mother_type="10002"
 				obj_id="17" obj_type="10002">
 				<attributes>
@@ -130,12 +124,14 @@
 		obj_id="7" obj_type="10002">
 		<attributes>
 			<name><![CDATA[Corporate Blog]]></name>
+			<navsortorder><![CDATA[50]]></navsortorder>
 		</attributes>
 		<children>
 			<Object contentid="10002.23" mother_id="7" mother_type="10002"
 				obj_id="23" obj_type="10002">
 				<attributes>
 					<name><![CDATA[Blogposts]]></name>
+					<navsortorder><![CDATA[50]]></navsortorder>
 				</attributes>
 			</Object>
 		</children>
@@ -144,6 +140,7 @@
 		obj_id="5" obj_type="10002">
 		<attributes>
 			<name><![CDATA[Departments]]></name>
+			<navsortorder><![CDATA[30]]></navsortorder>
 		</attributes>
 		<children>
 			<Object contentid="10002.10" mother_id="5" mother_type="10002"
@@ -156,6 +153,7 @@
 				obj_id="39" obj_type="10002">
 				<attributes>
 					<name><![CDATA[HR]]></name>
+					<navsortorder><![CDATA[30]]></navsortorder>
 				</attributes>
 			</Object>
 			<Object contentid="10002.8" mother_id="5" mother_type="10002"
@@ -168,12 +166,14 @@
 						obj_id="12" obj_type="10002">
 						<attributes>
 							<name><![CDATA[Department Info]]></name>
+							<navsortorder><![CDATA[1]]></navsortorder>
 						</attributes>
 					</Object>
 					<Object contentid="10002.15" mother_id="8" mother_type="10002"
 						obj_id="15" obj_type="10002">
 						<attributes>
 							<name><![CDATA[Wiki]]></name>
+							<navsortorder><![CDATA[2]]></navsortorder>
 						</attributes>
 					</Object>
 				</children>
@@ -184,18 +184,21 @@
 		obj_id="4" obj_type="10002">
 		<attributes>
 			<name><![CDATA[Home]]></name>
+			<navsortorder><![CDATA[10]]></navsortorder>
 		</attributes>
 		<children>
 			<Object contentid="10002.31" mother_id="4" mother_type="10002"
 				obj_id="31" obj_type="10002">
 				<attributes>
 					<name><![CDATA[Aloha Editor]]></name>
+					<navsortorder><![CDATA[10]]></navsortorder>
 				</attributes>
 			</Object>
 			<Object contentid="10002.30" mother_id="4" mother_type="10002"
 				obj_id="30" obj_type="10002">
 				<attributes>
 					<name><![CDATA[Gentics Content.Node 5]]></name>
+					<navsortorder><![CDATA[10]]></navsortorder>
 				</attributes>
 			</Object>
 		</children>
@@ -204,30 +207,35 @@
 		obj_id="21" obj_type="10002">
 		<attributes>
 			<name><![CDATA[News]]></name>
+			<navsortorder><![CDATA[20]]></navsortorder>
 		</attributes>
 	</Object>
 	<Object contentid="10002.6" mother_id="1" mother_type="10002"
 		obj_id="6" obj_type="10002">
 		<attributes>
 			<name><![CDATA[Projects-Wiki]]></name>
+			<navsortorder><![CDATA[40]]></navsortorder>
 		</attributes>
 		<children>
 			<Object contentid="10002.40" mother_id="6" mother_type="10002"
 				obj_id="40" obj_type="10002">
 				<attributes>
 					<name><![CDATA[Braintribe Mashup Demo]]></name>
+					<navsortorder><![CDATA[40]]></navsortorder>
 				</attributes>
 			</Object>
 			<Object contentid="10002.38" mother_id="6" mother_type="10002"
 				obj_id="38" obj_type="10002">
 				<attributes>
 					<name><![CDATA[Development-Wiki]]></name>
+					<navsortorder><![CDATA[40]]></navsortorder>
 				</attributes>
 			</Object>
 			<Object contentid="10002.27" mother_id="6" mother_type="10002"
 				obj_id="27" obj_type="10002">
 				<attributes>
 					<name><![CDATA[Marketing-Wiki]]></name>
+					<navsortorder><![CDATA[40]]></navsortorder>
 				</attributes>
 			</Object>
 		</children>

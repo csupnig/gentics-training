@@ -3,14 +3,18 @@ package com.gentics.rest.foldertemplatelist;
 import java.net.URISyntaxException;
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 import java.util.Vector;
 
 import com.gentics.contentnode.rest.model.File;
 import com.gentics.contentnode.rest.model.Folder;
 import com.gentics.contentnode.rest.model.Page;
+import com.gentics.contentnode.rest.model.Property;
+import com.gentics.contentnode.rest.model.Tag;
 import com.gentics.contentnode.rest.model.Template;
 import com.gentics.contentnode.rest.model.response.FileListResponse;
 import com.gentics.contentnode.rest.model.response.FolderListResponse;
+import com.gentics.contentnode.rest.model.response.FolderLoadResponse;
 import com.gentics.contentnode.rest.model.response.PageListResponse;
 import com.gentics.contentnode.rest.model.response.ResponseCode;
 import com.gentics.contentnode.rest.model.response.TemplateListResponse;
@@ -32,6 +36,8 @@ public class FolderTemplateList {
 	private static boolean doFiles = false;
 	private static boolean doPages = false;
 	private static boolean doTemplates = false;
+	
+	private static String sortorderKeyword = "object.navsortorder";
 
 	/**
 	 * @param args
@@ -43,6 +49,8 @@ public class FolderTemplateList {
 		doFiles = config.getBoolean("DO_FILES", DO_FILES);
 		doPages = config.getBoolean("DO_PAGES", DO_PAGES);
 		doTemplates = config.getBoolean("DO_TEMPLATES", DO_TEMPLATES);
+		
+		sortorderKeyword = config.getString("SORTORDERKEYWORD", sortorderKeyword);
 		
 		String rootIds = config.getString("ROOT_IDS");
 		String[] rootidarray = rootIds.split(",");
@@ -59,7 +67,7 @@ public class FolderTemplateList {
 		ContentRepositoryConfig crConfig = new ContentRepositoryConfig(config);
 		ContentRepository cr = crConfig.getContentRepository("UTF-8", config);
 		for (String folderid : rootidarray) {
-			FolderListResponse folderResponse = base.path("folder").path("getFolders").path(folderid).queryParam("recursive","true").queryParam("tree", "true").queryParam("sid", sid).get(FolderListResponse.class);
+			FolderListResponse folderResponse = base.path("folder").path("getFolders").path(folderid).queryParam("recursive","true").queryParam("sortby","object.sortorder").queryParam("tree", "true").queryParam("sid", sid).get(FolderListResponse.class);
 			if (folderResponse != null && folderResponse.getResponseInfo().getResponseCode() == ResponseCode.OK) {
 				List<Folder> folders = folderResponse.getFolders();
 				if (folders != null) {
@@ -87,6 +95,33 @@ public class FolderTemplateList {
 		folder.setObj_type("10002");
 		folder.setObj_id(folderid);
 		folder.set("name", restFolder.getName());
+//		Map<String, Tag> tags = restFolder.getTags();
+//		if (tags != null) {
+//			Tag sortorder = tags.get(sortorderKeyword);
+//			if (sortorder != null) {
+//				Map<String, Property> properties = sortorder.getProperties();
+//				Property sorttext = properties.get("text");
+//				if (sorttext != null) {
+//					folder.set("navsortorder", sorttext.getStringValue());
+//				}
+//			}
+//		} else {
+			FolderLoadResponse flr = base.path("folder").path("load").path(folderid).queryParam("sid", sid).get(FolderLoadResponse.class);
+			if (flr != null && flr.getResponseInfo().getResponseCode() == ResponseCode.OK) {
+				Folder tagFolder = flr.getFolder();
+				Map<String, Tag> ftags = tagFolder.getTags();
+				if (ftags != null) {
+					Tag sortorder = ftags.get(sortorderKeyword);
+					if (sortorder != null) {
+						Map<String, Property> properties = sortorder.getProperties();
+						Property sorttext = properties.get("text");
+						if (sorttext != null) {
+							folder.set("navsortorder", sorttext.getStringValue());
+						}
+					}
+				}
+			}
+//		}
 		folder.setMother_id("" + restFolder.getMotherId());
 		folder.setMother_type("10002");
 		List<Folder> subFolders = restFolder.getSubfolders();

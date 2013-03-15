@@ -11,3 +11,9 @@ http://www.gentics.com/Content.Node/guides/restapi/index.html
 - Altering a Page
 
 - Publish a Page
+
+
+
+============================================
+- Berechtigungsgruppen Anelgen
+- Berechtigungen setzen

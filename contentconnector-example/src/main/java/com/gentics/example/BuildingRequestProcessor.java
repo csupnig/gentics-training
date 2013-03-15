@@ -20,6 +20,7 @@ public class BuildingRequestProcessor extends RequestProcessor {
 			throws CRException {
 		Collection<CRResolvableBean> beans = new Vector<CRResolvableBean>();
 		
+		
 		for (int i = 1; i < 10; i++) {
 			CRResolvableBean bean = new CRResolvableBean(i);
 			bean.set("name", "Bean Name" + i);
