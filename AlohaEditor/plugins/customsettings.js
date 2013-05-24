@@ -2,20 +2,11 @@
     if (window.Aloha === undefined || window.Aloha === null) {
         var Aloha = window.Aloha = {};
     }
-
-    window.Aloha.settings = {
-        toolbar: {
-            tabs: [
-                    {
-                        label: 'View',
-                        showOn: { scope: 'Aloha.continuoustext' },
-                        components: [
-                            [
-                                'toggleSchulung'
-                            ]
-                        ]
-                    }
-                ]   
+    
+    window.Aloha.settings.plugins.schulung={
+        config: [ 'schulung default' ],
+        editables: {
+            '#GENTICS_METAEDITABLE_page_name': ['schulung header']
         }
     };
 })(window);
