@@ -18,7 +18,7 @@ var mytag = Aloha.GCN.page.createTag('image', function(tag){
 
 
 
-//Own implementation
+//Remove a tag.
 Aloha.GCN.page.tag('image4', function(tag){
 	tag.remove();
 	tag.parent().save();

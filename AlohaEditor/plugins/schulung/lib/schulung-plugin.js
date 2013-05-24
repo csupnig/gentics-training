@@ -33,7 +33,7 @@ define([
 		createButtons: function () {
 			var that = this;
 			
-			this._toggleMetaViewButton = Ui.adopt("toggleSchulung", ToggleButton, {
+			this._toggleSchulungButton = Ui.adopt("toggleSchulung", ToggleButton, {
 				tooltip : i18n.t('button.schulung.tooltip'),
 				icon: 'aloha-icon aloha-icon-schulung',
 				scope: 'Aloha.continuoustext',
