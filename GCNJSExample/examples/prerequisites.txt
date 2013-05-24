@@ -1,0 +1,8 @@
+You need to know beforehand:
+- JavaScript
+- jQuery
+- Implementation in Gentics Content.Node
+
+
+Go to the preview of a Page on http://schulung.gentics.com/
+git@github.com:csupnig/gentics-training.git

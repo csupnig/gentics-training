@@ -11,4 +11,3 @@ GCN.folder(4, function (folder) {
 });
 
 
-//TASK: Write a JavaScript snippet, that prints the name of every page in the folder with the id 21
