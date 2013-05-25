@@ -1,3 +1,5 @@
+//http://www.aloha-editor.org/guides/writing_plugins.html
+//http://www.supnig.com/blog/aloha-editor-and-jqueryui
 define([
 	'aloha/core',
 	'aloha/plugin',
