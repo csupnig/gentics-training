@@ -22,10 +22,4 @@ GCN.page(5, { update: false }, function (page) {
     alert("content: " + content);
 });
 
-
-
-//Async Programming
-var myPage = GCN.folder(1).creatPage(1,{language:'de'}).save();
-
-//Publish breaks the chain
-myPage.publiush();
+//TASK: Write a JavaScript snippet, that prints the name of every page in the folder with the id 21

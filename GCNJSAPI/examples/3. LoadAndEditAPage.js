@@ -1,4 +1,7 @@
 //http://www.gentics.com/Content.Node/guides/gcn_js_api_page.html
+//http://www.gentics.com/Content.Node/guides/gcnjsapi/jsdoc/symbols/FolderAPI.html
+
+//.edit() will only work if Aloha is loaded
 
 var myPage = GCN.page(1, function (page) {
     var name = page.prop('name');
@@ -7,9 +10,9 @@ var myPage = GCN.page(1, function (page) {
     
     
     //Specify a selector where to edit the content
-    page.tag('content').edit("#GENTICS_EDITABLE_2132");
+    page.tag('content').edit("#content");
     
-    
+    page.tag('teasers').part('text', 'my content');
 });
 
 
@@ -17,7 +20,7 @@ var myPage = GCN.page(1, function (page) {
 myPage.save();
 
 
-//save the page;
+//save and publish the page;
 myPage.save().publish();
 
 
