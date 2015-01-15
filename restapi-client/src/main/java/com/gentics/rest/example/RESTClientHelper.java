@@ -3,6 +3,7 @@ package com.gentics.rest.example;
 import java.util.ArrayList;
 
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.NewCookie;
 
 import org.codehaus.jackson.jaxrs.JacksonJsonProvider;
 
@@ -19,7 +20,9 @@ import com.sun.jersey.api.client.filter.ClientFilter;
 
 public class RESTClientHelper {
 	
-	private static final String DEFAULTURL = "http://demo-cms.gentics.com/CNPortletapp/rest/";
+	private static final String DEFAULTURL = "http://localhost/CNPortletapp/rest/";
+	
+	private static final String SESSION_SECRET_KEY ="GCN_SESSION_SECRET";
 	
 	private WebResource webResource;
 	
@@ -27,11 +30,15 @@ public class RESTClientHelper {
 	
 	private Client client;
 	
+	private ArrayList<Object> cookies;
+	
 	public RESTClientHelper() {
 		this(null);
 	}
 	
 	public RESTClientHelper (final String resturl) {
+		
+		
 		String restBase = resturl;
 		if (restBase == null) {
 			restBase = DEFAULTURL;
@@ -40,8 +47,6 @@ public class RESTClientHelper {
 		clientConfig.getClasses().add(JacksonJsonProvider.class);
 		client = Client.create(clientConfig);
 		client.addFilter(new ClientFilter() {
-			private ArrayList<Object> cookies;
-
 			@Override
 			public ClientResponse handle(ClientRequest request)
 					throws ClientHandlerException {
@@ -84,6 +89,19 @@ public class RESTClientHelper {
 	
 	public String getSessionId() {
 		return this.sessionID;
+	}
+	
+	public String getSessionSecret() {
+		for (Object o : this.cookies) {
+			if (o instanceof NewCookie) {
+				System.out.println(((NewCookie)o).getName());
+				NewCookie c = (NewCookie)o;
+				if (SESSION_SECRET_KEY.equals(c.getName())){
+					return c.getValue();
+				}
+			}
+		}
+		return "";
 	}
 	
 	public void destroy() {
